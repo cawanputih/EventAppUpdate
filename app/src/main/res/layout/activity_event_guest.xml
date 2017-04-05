@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_event_guest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg_validation"
+    tools:context="com.example.test.EventGuestActivity">
+
+    <Button
+        android:text="Pilih Event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnevent"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/nama"
+        android:layout_alignParentLeft="true"
+        android:textAllCaps="false"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Pilih Guest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/btnguest"
+        android:textAllCaps="false"
+        android:layout_below="@+id/btnevent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text=""
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:id="@+id/nama"
+        android:layout_width="400dp"
+        android:layout_marginTop="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

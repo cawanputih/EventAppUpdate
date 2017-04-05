@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+
+    <ImageView
+        android:layout_width="120dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/gambar"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_height="20dp"
+        android:id="@+id/namaevent"
+        android:layout_width="240dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/gambar"
+        android:layout_toStartOf="@+id/gambar"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_height="20dp"
+        android:layout_below="@+id/namaevent"
+        android:layout_alignLeft="@+id/namaevent"
+        android:layout_alignStart="@+id/namaevent"
+        android:textColor="#FF0000"
+        android:id="@+id/tanggalevent"
+        android:layout_width="240dp"
+        android:layout_alignRight="@+id/namaevent"
+        android:layout_alignEnd="@+id/namaevent" />
+
+    <TextView
+        android:text="#nutricia"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tanggalevent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/hashtag"
+        android:background="#abc9ce"
+        android:textColor="#FFFFFF"
+        android:layout_alignRight="@+id/tanggalevent"
+        android:layout_alignEnd="@+id/tanggalevent"
+        android:layout_marginRight="127dp"
+        android:layout_marginEnd="127dp" />
+
+    <TextView
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget efficitur elit. Cras id porttitor turpis, vitae tempus nisi. Maecenas ..."
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="130dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/hashtag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/tanggalevent"
+        android:layout_alignEnd="@+id/tanggalevent"
+        android:layout_alignBottom="@+id/gambar" />
+</RelativeLayout>
